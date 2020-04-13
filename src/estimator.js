@@ -16,10 +16,10 @@ const covid19ImpactEstimator = (data) => {
   if (periodType === 'months') computedTimeToElapse = timeToElapse * 30;
 
   impact.infectionsByRequestedTime = (
-    impact.currentlyInfected * (2 ** ((1 / 3) * computedTimeToElapse))
+    impact.currentlyInfected * (2 ** (Math.floor(computedTimeToElapse / 3)))
   );
   severeImpact.infectionsByRequestedTime = (
-    severeImpact.currentlyInfected * (2 ** ((1 / 3) * computedTimeToElapse))
+    severeImpact.currentlyInfected * (2 ** ((Math.floor(computedTimeToElapse / 3))))
   );
 
   impact.severeCasesByRequestedTime = (15 / 100) * impact.infectionsByRequestedTime;
