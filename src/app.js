@@ -128,7 +128,7 @@ app.get('/api/v1/on-covid-19/logs', (req, res) => {
     logs.push(newLog);
     let logsText = '';
     logs.forEach((log) => {
-      logsText += `${log.method}\t\t${log.request}\t\t${log.status}\t\t${log.responseTime}\n`;
+      logsText += `${log.method}\t\t${log.request}\t\t${log.status}\t\t0${log.responseTime}\n`;
     });
 
     return fs.writeFile(filePath, JSON.stringify(logs), (error) => {
