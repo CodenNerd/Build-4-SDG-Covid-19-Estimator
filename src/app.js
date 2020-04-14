@@ -120,7 +120,7 @@ app.get('/api/v1/on-covid-19/logs', (req, res) => {
     } catch (error) {
       logs = [];
     }
-    res.setHeader('Content-Type', 'application/text');
+    res.setHeader('Content-Type', 'text/plain');
     const end = new Date();
     newLog.status = 200;
     newLog.responseTime = `${end - start}ms`;
