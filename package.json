@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint ./src/"
+    "start": "node src/app.js"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -35,8 +35,5 @@
   },
   "homepage": "https://github.com/BuildforSDG-Cohort1-Assessment/covid-19-estimator-js#readme",
   "main": "src/app.js",
-  "author": "AbdulAzeez Atanda",
-  "scripts":{
-    "start": "node src/app.js"
-  }
+  "author": "AbdulAzeez Atanda"
 }
