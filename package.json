@@ -35,5 +35,8 @@
   },
   "homepage": "https://github.com/BuildforSDG-Cohort1-Assessment/covid-19-estimator-js#readme",
   "main": "src/app.js",
-  "author": "AbdulAzeez Atanda"
+  "author": "AbdulAzeez Atanda",
+  "scripts":{
+    "start": "node src/app.js"
+  }
 }
